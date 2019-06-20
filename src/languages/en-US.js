@@ -50,7 +50,7 @@ module.exports = class extends Language {
                 "Then vote for PenguBot via the link below and also unlock access to",
                 "limited features that only upvoters can have access to!",
                 "",
-                "• **Vote:** https://www.pengubot.com/upvote"],
+                "• **Vote:** https://discordbots.org/bot/PenguBot/vote"],
             COMMAND_TOGGLE_GROUP_DESCRPTION: "Disable/Enable Command Categories.",
             COMMAND_TOGGLE_COMMAND_DESCRPTION: "Disable/Enable Commands in your guild.",
             COMMAND_SUPPORT_DESCRIPTION: "Link to join PenguBot's Support Guild.",
@@ -350,7 +350,7 @@ module.exports = class extends Language {
             CMD_FORT_PLAT: "Invalid Username or Platform, please retry with either of these platforms: `pc`. `xbox`, `psn`.",
             CMD_FORT_ERR: "There was an error in the Tracking API, please try again later.",
             CMD_OSU_ERR: "Either the user couldn't be found or we're having some issues.",
-            CMD_UPVOTE_ONLY: "You are not an up-voter of PenguBot, please visit <http://bit.ly/VoteDBL> to vote now and get access!",
+            CMD_UPVOTE_ONLY: "You are not an up-voter of PenguBot, please visit <https://discordbots.org/bot/PenguBot/vote> to vote now and get access!",
             CMD_PATRON_ONLY: "This command is locked for Patrons Only. If you want to become a Patron please visit <https://patreon.com/PenguBot> and gain access to the Premium Bot.",
             CMD_RPS_INVALID: "That's an invalid move, please choose",
             CMD_SLOTS_INVALID: "The specified amount of Snowflakes is invalid, please enter at least 1 or more Snowflakes.",
@@ -419,7 +419,7 @@ module.exports = class extends Language {
             COMMAND_CONF_RESET: (key, response) => `The key **${key}** has been reset to: \`${response}\``,
 
             // Music interface
-            MUSICIF_NO_MUSIC_PLAYING: "There's currently no music playing!",
+            MUSIC_NOT_PLAYING: "There is currently no music playing, queue up some songs to get the party going!",
             MUSICIF_NOW_PLAYING_TITLE: "Now Playing - PenguBot",
             MUSICIF_TITLE: "Title",
             MUSICIF_AUTHOR: "Author",
@@ -430,10 +430,10 @@ module.exports = class extends Language {
             MUSICIF_QUEUE_TITLE: "Use the reactions to change pages, select a page, or stop viewing the queue",
             MUSICIF_QUEUE_LOADING: "Loading Queue...",
             MUSICIF_NO_VOICE_CHANNEL: "You're currently not in a voice channel or there was an error, try again.",
-            MUSICIF_QUEUE_LIMIT_REACHED: "Sorry but the maximum queue size is 1000 songs. If you want to bypass this limit, consider becoming a Patron at <https://patreon.com/PenguBot>",
             MUSICIF_TOGGLE_SONG_LOOP: "Toggled single song repeat.",
             MUSICIF_TOGGLE_QUEUE_LOOP: "Now all queue will repeat.",
-            MUSICIF_SONG_NOT_FOUND: "Song not found, please try with a different one",
+            MUSIC_NO_SONGS_IN_QUEUE: "There are no songs queued up. Queue up some songs!",
+            COMMAND_MUSIC_LOOP_MAX_QUEUE: "Sorry but the maximum queue size is 1000 songs. If you want to bypass this limit, consider becoming a Patron at <https://patreon.com/PenguBot>",
 
             // 30th December 2018
             HELP_SET_LANGUAGE: ["Please select a Language you Want **PenguBot** to Speak in.",
@@ -458,6 +458,9 @@ module.exports = class extends Language {
             COMMAND_HISTORY_DESCRIPTION: "Get a user's infraction history from mod logs.",
             COMMAND_REASON_DESCRIPTION: "Allow a moderator to set a case's history in mod logs.",
             COMMAND_MODLOG_DESCRIPTION: "Change the Mod Logs setting in the server.",
+
+            COMMAND_MEME_DESCRIPTION: "Grabs you a random meme from the interwebs.",
+            COMMAND_ROLEINFO_DESCRIPTION: "Get information about a role in a server.",
 
             // Commands (Start of cleaning up Language files)
             COMMAND_AFK_REMOVED: username => `Dear ${username}, I've successfully removed you from AFK.`,
